@@ -1,22 +1,17 @@
 package ru.mirea.lab20.ex2;
 
 public class Husky extends Dog {
-    private String _bark;
-    public Husky(String type, String origin, double weight, double height, String bark) {
-        super(type, origin, weight, height);
-        this._bark = bark;
-    }
-
-    public void set_bark(String _bark) {
-        this._bark = _bark;
-    }
-
-    public String get_bark() {
-        return _bark;
+    public Husky(String origin, double weight, double height) {
+        super(origin, weight, height);
     }
 
     @Override
     public void bark() {
-        System.out.println("This " + )
+        System.out.println("Woof woof");
+    }
+
+    @Override
+    public String toString() {
+        return "This husky comes from " + this.getOrigin() + ", and is " + this.getHeight() + "cm tall " + "and " + this.getWeight() + "kg";
     }
 }
