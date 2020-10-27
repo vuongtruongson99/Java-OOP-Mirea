@@ -30,6 +30,7 @@ public class TestUser {
             try {
                 validate(identifierNumber);
                 check = true;
+                System.out.println("Valid user!");
             } catch (CheckIdentifierNumberException ex) {
                 System.out.println("Exception occured: " + ex);
             }
