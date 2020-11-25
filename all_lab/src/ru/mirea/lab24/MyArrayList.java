@@ -1,4 +1,3 @@
-// Создать свою коллекцию, такую же как и ArrayList.
 package ru.mirea.lab24;
 
 public class MyArrayList<T> {
